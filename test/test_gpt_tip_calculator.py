@@ -8,7 +8,7 @@ def test_calculate_tip():
 
 #Test 2: Check if the function returns the correct value when given a bill, percentage and number of people
 def test_calculate_tip_2():
-    assert calculate_tip(50, 0.15, 2) == 28.75
+    assert calculate_tip(50, 0.15, 2) == 32.5
 
 #Test 3: Check if the function returns the correct value when given a bill, percentage and number of people
 def test_calculate_tip_3():
@@ -16,8 +16,8 @@ def test_calculate_tip_3():
 
 #Test 4: Check if the function returns the correct value when given a bill, percentage and number of people
 def test_calculate_tip_4():
-    assert calculate_tip(200, 0.25, 5) == 50.0
+    assert calculate_tip(200, 0.25, 5) == 55.0
 
 #Test 5: Check if the function returns the correct value when given a bill, percentage and number of people
 def test_calculate_tip_5():
-    assert calculate_tip(150, 0.2, 3) == 60.0
+    assert calculate_tip(150, 0.2, 3) == 45.0

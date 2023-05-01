@@ -9,7 +9,11 @@ def tip_calculator_console():
     print(f"Each person should pay: $ {payment_per_person}")
 
 def calculate_tip(bill, percentage, num_people):
-    return round((bill * (1+percentage)) / num_people, 2)
+    percentage_multiplier = 1+percentage
+    total_bill = bill * percentage_multiplier
+    bill_per_person = total_bill / num_people
+    rounded_value = round(bill_per_person, 2)
+    return rounded_value
 
     
 
